@@ -3,7 +3,7 @@ package html
 
 type PreProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Pre(p PreProps, children ...Node) Node {

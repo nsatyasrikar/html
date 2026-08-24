@@ -3,7 +3,7 @@ package html
 
 type AudioProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Audio(p AudioProps, children ...Node) Node {

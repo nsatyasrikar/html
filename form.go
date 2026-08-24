@@ -3,7 +3,7 @@ package html
 
 type FormProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Form(p FormProps, children ...Node) Node {

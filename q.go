@@ -3,7 +3,7 @@ package html
 
 type QProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Q(p QProps, children ...Node) Node {

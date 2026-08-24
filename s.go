@@ -3,7 +3,7 @@ package html
 
 type SProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func S(p SProps, children ...Node) Node {

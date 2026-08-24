@@ -3,7 +3,7 @@ package html
 
 type CanvasProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Canvas(p CanvasProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type MenuProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Menu(p MenuProps, children ...Node) Node {

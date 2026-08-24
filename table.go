@@ -3,7 +3,7 @@ package html
 
 type TableProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Table(p TableProps, children ...Node) Node {

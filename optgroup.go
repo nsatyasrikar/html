@@ -3,7 +3,7 @@ package html
 
 type OptgroupProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Optgroup(p OptgroupProps, children ...Node) Node {

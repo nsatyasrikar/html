@@ -3,7 +3,7 @@ package html
 
 type ColgroupProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Colgroup(p ColgroupProps, children ...Node) Node {

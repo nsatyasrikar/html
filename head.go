@@ -3,7 +3,7 @@ package html
 
 type HeadProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Head(p HeadProps, children ...Node) Node {

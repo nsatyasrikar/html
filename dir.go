@@ -3,7 +3,7 @@ package html
 
 type DirProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Dir(p DirProps, children ...Node) Node {

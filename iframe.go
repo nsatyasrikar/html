@@ -3,7 +3,7 @@ package html
 
 type IframeProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Iframe(p IframeProps, children ...Node) Node {

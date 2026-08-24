@@ -3,7 +3,7 @@ package html
 
 type CenterProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Center(p CenterProps, children ...Node) Node {

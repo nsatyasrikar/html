@@ -3,7 +3,7 @@ package html
 
 type LinkProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Link(p LinkProps) Node {

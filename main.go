@@ -3,7 +3,7 @@ package html
 
 type MainProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Main(p MainProps, children ...Node) Node {

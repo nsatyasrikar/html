@@ -3,7 +3,7 @@ package html
 
 type BaseProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Base(p BaseProps) Node {

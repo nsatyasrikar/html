@@ -3,7 +3,7 @@ package html
 
 type BigProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Big(p BigProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type SmallProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Small(p SmallProps, children ...Node) Node {

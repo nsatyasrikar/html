@@ -3,7 +3,7 @@ package html
 
 type NoscriptProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Noscript(p NoscriptProps, children ...Node) Node {

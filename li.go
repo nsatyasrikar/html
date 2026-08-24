@@ -3,7 +3,7 @@ package html
 
 type LiProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Li(p LiProps, children ...Node) Node {

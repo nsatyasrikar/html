@@ -3,7 +3,7 @@ package html
 
 type TitleProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Title(p TitleProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type WbrProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Wbr(p WbrProps) Node {

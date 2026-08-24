@@ -3,7 +3,7 @@ package html
 
 type RbProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Rb(p RbProps, children ...Node) Node {

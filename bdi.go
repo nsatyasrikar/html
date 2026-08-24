@@ -3,7 +3,7 @@ package html
 
 type BdiProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Bdi(p BdiProps, children ...Node) Node {

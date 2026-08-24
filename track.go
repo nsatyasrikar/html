@@ -3,7 +3,7 @@ package html
 
 type TrackProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Track(p TrackProps) Node {

@@ -3,7 +3,7 @@ package html
 
 type LabelProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Label(p LabelProps, children ...Node) Node {

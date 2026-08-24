@@ -3,7 +3,7 @@ package html
 
 type TfootProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Tfoot(p TfootProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type ParamProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Param(p ParamProps) Node {

@@ -3,7 +3,7 @@ package html
 
 type FooterProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Footer(p FooterProps, children ...Node) Node {

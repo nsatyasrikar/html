@@ -3,7 +3,7 @@ package html
 
 type UProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func U(p UProps, children ...Node) Node {

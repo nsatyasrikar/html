@@ -3,7 +3,7 @@ package html
 
 type ModelProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Model(p ModelProps, children ...Node) Node {

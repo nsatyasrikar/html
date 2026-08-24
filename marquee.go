@@ -3,7 +3,7 @@ package html
 
 type MarqueeProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Marquee(p MarqueeProps, children ...Node) Node {

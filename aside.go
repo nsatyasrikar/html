@@ -3,7 +3,7 @@ package html
 
 type AsideProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Aside(p AsideProps, children ...Node) Node {

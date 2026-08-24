@@ -3,7 +3,7 @@ package html
 
 type VideoProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Video(p VideoProps, children ...Node) Node {

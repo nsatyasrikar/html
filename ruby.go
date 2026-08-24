@@ -3,7 +3,7 @@ package html
 
 type RubyProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Ruby(p RubyProps, children ...Node) Node {

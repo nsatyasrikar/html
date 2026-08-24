@@ -3,7 +3,7 @@ package html
 
 type RtProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Rt(p RtProps, children ...Node) Node {

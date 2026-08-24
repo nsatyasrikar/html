@@ -3,7 +3,7 @@ package html
 
 type XmpProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Xmp(p XmpProps, children ...Node) Node {

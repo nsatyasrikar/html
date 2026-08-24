@@ -3,7 +3,7 @@ package html
 
 type FontProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Font(p FontProps, children ...Node) Node {

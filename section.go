@@ -3,7 +3,7 @@ package html
 
 type SectionProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Section(p SectionProps, children ...Node) Node {

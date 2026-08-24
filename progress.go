@@ -3,7 +3,7 @@ package html
 
 type ProgressProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Progress(p ProgressProps, children ...Node) Node {

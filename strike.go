@@ -3,7 +3,7 @@ package html
 
 type StrikeProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Strike(p StrikeProps, children ...Node) Node {

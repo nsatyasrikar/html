@@ -3,7 +3,7 @@ package html
 
 type KbdProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Kbd(p KbdProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type CodeProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Code(p CodeProps, children ...Node) Node {

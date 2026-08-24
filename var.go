@@ -3,7 +3,7 @@ package html
 
 type VarProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Var(p VarProps, children ...Node) Node {

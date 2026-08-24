@@ -3,7 +3,7 @@ package html
 
 type AddressProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Address(p AddressProps, children ...Node) Node {

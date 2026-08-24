@@ -3,7 +3,7 @@ package html
 
 type EmProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Em(p EmProps, children ...Node) Node {

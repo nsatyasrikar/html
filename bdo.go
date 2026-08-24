@@ -3,7 +3,7 @@ package html
 
 type BdoProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Bdo(p BdoProps, children ...Node) Node {

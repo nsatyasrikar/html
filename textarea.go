@@ -3,7 +3,7 @@ package html
 
 type TextareaProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Textarea(p TextareaProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type SupProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Sup(p SupProps, children ...Node) Node {

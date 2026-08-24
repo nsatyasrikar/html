@@ -3,7 +3,7 @@ package html
 
 type GeolocationProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Geolocation(p GeolocationProps, children ...Node) Node {

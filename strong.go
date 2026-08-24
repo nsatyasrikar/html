@@ -3,7 +3,7 @@ package html
 
 type StrongProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Strong(p StrongProps, children ...Node) Node {

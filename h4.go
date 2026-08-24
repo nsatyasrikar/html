@@ -3,7 +3,7 @@ package html
 
 type H4Props struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func H4(p H4Props, children ...Node) Node {

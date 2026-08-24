@@ -3,7 +3,7 @@ package html
 
 type HgroupProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Hgroup(p HgroupProps, children ...Node) Node {

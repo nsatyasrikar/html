@@ -3,7 +3,7 @@ package html
 
 type NoembedProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Noembed(p NoembedProps, children ...Node) Node {

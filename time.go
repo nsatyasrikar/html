@@ -3,7 +3,7 @@ package html
 
 type TimeProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Time(p TimeProps, children ...Node) Node {

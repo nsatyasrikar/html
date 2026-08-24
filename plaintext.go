@@ -3,7 +3,7 @@ package html
 
 type PlaintextProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Plaintext(p PlaintextProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type LegendProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Legend(p LegendProps, children ...Node) Node {

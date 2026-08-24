@@ -3,7 +3,7 @@ package html
 
 type EmbedProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Embed(p EmbedProps) Node {

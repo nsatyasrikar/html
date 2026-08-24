@@ -3,7 +3,7 @@ package html
 
 type FigureProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Figure(p FigureProps, children ...Node) Node {

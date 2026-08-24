@@ -3,7 +3,7 @@ package html
 
 type FigcaptionProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Figcaption(p FigcaptionProps, children ...Node) Node {

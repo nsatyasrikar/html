@@ -3,7 +3,7 @@ package html
 
 type ScriptTagProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func ScriptTag(p ScriptTagProps, children ...Node) Node {

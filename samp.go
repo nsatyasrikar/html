@@ -3,7 +3,7 @@ package html
 
 type SampProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Samp(p SampProps, children ...Node) Node {

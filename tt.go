@@ -3,7 +3,7 @@ package html
 
 type TtProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Tt(p TtProps, children ...Node) Node {

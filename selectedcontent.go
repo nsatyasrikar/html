@@ -3,7 +3,7 @@ package html
 
 type SelectedcontentProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Selectedcontent(p SelectedcontentProps, children ...Node) Node {

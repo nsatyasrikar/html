@@ -3,7 +3,7 @@ package html
 
 type FramesetProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Frameset(p FramesetProps, children ...Node) Node {

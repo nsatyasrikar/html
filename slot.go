@@ -3,7 +3,7 @@ package html
 
 type SlotProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Slot(p SlotProps, children ...Node) Node {

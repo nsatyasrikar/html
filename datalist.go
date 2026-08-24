@@ -3,7 +3,7 @@ package html
 
 type DatalistProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Datalist(p DatalistProps, children ...Node) Node {

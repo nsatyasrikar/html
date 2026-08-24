@@ -3,7 +3,7 @@ package html
 
 type DlProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Dl(p DlProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type BodyProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Body(p BodyProps, children ...Node) Node {

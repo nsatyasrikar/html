@@ -3,7 +3,7 @@ package html
 
 type OptionProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Option(p OptionProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type OutputProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Output(p OutputProps, children ...Node) Node {

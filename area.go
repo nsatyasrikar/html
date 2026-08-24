@@ -3,7 +3,7 @@ package html
 
 type AreaProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Area(p AreaProps) Node {

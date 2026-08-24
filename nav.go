@@ -3,7 +3,7 @@ package html
 
 type NavProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Nav(p NavProps, children ...Node) Node {

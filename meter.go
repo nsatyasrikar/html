@@ -3,7 +3,7 @@ package html
 
 type MeterProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Meter(p MeterProps, children ...Node) Node {

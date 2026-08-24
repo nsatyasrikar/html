@@ -3,7 +3,7 @@ package html
 
 type FieldsetProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Fieldset(p FieldsetProps, children ...Node) Node {

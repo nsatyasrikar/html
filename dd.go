@@ -3,7 +3,7 @@ package html
 
 type DdProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Dd(p DdProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type CiteProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Cite(p CiteProps, children ...Node) Node {

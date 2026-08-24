@@ -3,7 +3,7 @@ package html
 
 type TemplateProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Template(p TemplateProps, children ...Node) Node {

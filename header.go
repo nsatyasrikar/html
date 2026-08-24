@@ -3,7 +3,7 @@ package html
 
 type HeaderProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Header(p HeaderProps, children ...Node) Node {

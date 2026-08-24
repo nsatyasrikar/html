@@ -3,7 +3,7 @@ package html
 
 type SubProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Sub(p SubProps, children ...Node) Node {

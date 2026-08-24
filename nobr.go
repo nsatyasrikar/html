@@ -3,7 +3,7 @@ package html
 
 type NobrProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Nobr(p NobrProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type OlProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Ol(p OlProps, children ...Node) Node {

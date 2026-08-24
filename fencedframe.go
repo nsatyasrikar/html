@@ -3,7 +3,7 @@ package html
 
 type FencedframeProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Fencedframe(p FencedframeProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type ArticleProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Article(p ArticleProps, children ...Node) Node {

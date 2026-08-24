@@ -3,7 +3,7 @@ package html
 
 type TheadProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Thead(p TheadProps, children ...Node) Node {

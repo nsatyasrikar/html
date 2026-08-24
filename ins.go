@@ -3,7 +3,7 @@ package html
 
 type InsProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Ins(p InsProps, children ...Node) Node {

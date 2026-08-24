@@ -3,7 +3,7 @@ package html
 
 type MapProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Map(p MapProps, children ...Node) Node {

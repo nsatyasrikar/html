@@ -3,7 +3,7 @@ package html
 
 type AcronymProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Acronym(p AcronymProps, children ...Node) Node {

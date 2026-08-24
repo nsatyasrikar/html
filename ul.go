@@ -3,7 +3,7 @@ package html
 
 type UlProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Ul(p UlProps, children ...Node) Node {

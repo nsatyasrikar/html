@@ -3,7 +3,7 @@ package html
 
 type RpProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Rp(p RpProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type HrProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Hr(p HrProps) Node {

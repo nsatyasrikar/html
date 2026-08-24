@@ -3,7 +3,7 @@ package html
 
 type AbbrProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Abbr(p AbbrProps, children ...Node) Node {

@@ -3,7 +3,7 @@ package html
 
 type DialogProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Dialog(p DialogProps, children ...Node) Node {

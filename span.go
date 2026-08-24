@@ -3,7 +3,7 @@ package html
 
 type SpanProps struct {
 	ID, Class, Style, Title *string
-	Attributes []Attribute
+	Attributes              []Attribute
 }
 
 func Span(p SpanProps, children ...Node) Node {
