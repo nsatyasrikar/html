@@ -28,7 +28,7 @@ func main() {
 			return err
 		}
 		rel, _ := filepath.Rel(root, filepath.Dir(path))
-		if strings.Contains(string(filepath.Separator)+rel+string(filepath.Separator), string(filepath.Separator)+"attributes"+string(filepath.Separator)) {
+		if strings.Contains(rel, string(filepath.Separator)) {
 			return nil
 		}
 		var r rec
@@ -43,7 +43,14 @@ func main() {
 	})
 }
 func write(dir, tag string) error {
-	fn := filepath.Join(dir, kebab(tag)+".go")
+	filename := kebab(tag) + ".go"
+	if tag == "script" {
+		filename = "script_tag.go"
+	}
+	fn := filepath.Join(dir, filename)
+	if _, err := os.Stat(fn); err == nil {
+		return nil
+	}
 	name := exported(tag)
 	void := map[string]bool{"area": true, "base": true, "br": true, "col": true, "embed": true, "hr": true, "img": true, "input": true, "link": true, "meta": true, "param": true, "source": true, "track": true, "wbr": true}[tag]
 	sig := fmt.Sprintf("func %s(p %sProps", name, name)
@@ -60,6 +67,9 @@ func write(dir, tag string) error {
 	return os.WriteFile(fn, []byte(body), 0644)
 }
 func exported(s string) string {
+	if s == "script" {
+		return "ScriptTag"
+	}
 	var b strings.Builder
 	up := true
 	for _, r := range s {
