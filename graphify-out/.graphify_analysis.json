@@ -1,0 +1,934 @@
+{
+  "communities": {
+    "0": [
+      "go_type_strings_builder",
+      "go_type_testing_t",
+      "h1",
+      "h1_h1",
+      "html_elementnode",
+      "html_elementnode_rendernode",
+      "html_elementnode_validatenode",
+      "html_h1props",
+      "html_rawnode",
+      "html_rawnode_rendernode",
+      "html_rawnode_validatenode",
+      "html_renderer_element",
+      "html_renderer_raw",
+      "html_renderer_text",
+      "html_scriptcodenode",
+      "html_scriptcodenode_rendernode",
+      "html_scriptcodenode_validatenode",
+      "html_scripttagprops",
+      "html_textnode",
+      "html_textnode_rendernode",
+      "html_textnode_validatenode",
+      "html_validation",
+      "html_validation_warn",
+      "html_warning",
+      "html_warninghandler",
+      "node_go_html_renderer",
+      "node_go_node",
+      "node_go_renderer",
+      "prop_prop",
+      "render",
+      "render_go_html_renderer",
+      "render_itoa",
+      "render_render",
+      "render_test",
+      "render_test_testrendertree",
+      "render_test_testvoidtaghasnochildrenapi",
+      "script_code",
+      "script_code_escapescriptend",
+      "script_code_go_renderer",
+      "script_code_scriptcode",
+      "script_code_test",
+      "script_code_test_testscriptcodeescapesclosingtag",
+      "script_tag",
+      "script_tag_scripttag",
+      "t",
+      "text",
+      "text_text",
+      "validate",
+      "validate_validate",
+      "warning_emitwarning",
+      "warning_go_warning",
+      "warning_setwarninghandler"
+    ],
+    "1": [
+      "aside",
+      "aside_aside",
+      "details",
+      "details_details",
+      "h4",
+      "h4_h4",
+      "html_asideprops",
+      "html_detailsprops",
+      "html_h4props",
+      "html_insprops",
+      "html_node",
+      "html_noframesprops",
+      "html_selectprops",
+      "html_tbodyprops",
+      "ins",
+      "ins_ins",
+      "noframes",
+      "noframes_noframes",
+      "select",
+      "select_select",
+      "tbody",
+      "tbody_tbody",
+      "unsafe_html",
+      "unsafe_html_unsafehtml"
+    ],
+    "2": [
+      "attribute_customattributes",
+      "attribute_go_attribute",
+      "dir",
+      "dir_dir",
+      "frameset",
+      "frameset_frameset",
+      "h2",
+      "h2_h2",
+      "h5",
+      "h5_h5",
+      "hgroup",
+      "hgroup_hgroup",
+      "html_attribute",
+      "html_dirprops",
+      "html_framesetprops",
+      "html_h2props",
+      "html_h5props",
+      "html_hgroupprops",
+      "html_linkprops",
+      "html_optgroupprops",
+      "link",
+      "link_link",
+      "optgroup",
+      "optgroup_optgroup"
+    ],
+    "3": [
+      "big",
+      "big_big",
+      "br",
+      "br_br",
+      "code",
+      "code_code",
+      "col",
+      "col_col",
+      "common_props",
+      "common_props_globalattrs",
+      "em",
+      "em_em",
+      "html_bigprops",
+      "html_brprops",
+      "html_codeprops",
+      "html_colprops",
+      "html_emprops",
+      "html_globalprops",
+      "html_markprops",
+      "html_sampprops",
+      "mark",
+      "mark_mark",
+      "samp",
+      "samp_samp"
+    ],
+    "4": [
+      "button",
+      "button_button",
+      "html_buttonprops",
+      "html_inputprops",
+      "html_inputtype",
+      "html_script",
+      "input",
+      "input_input",
+      "prop"
+    ],
+    "5": [
+      "cmd_htmlgen_main",
+      "cmd_htmlgen_main_exported",
+      "cmd_htmlgen_main_kebab",
+      "cmd_htmlgen_main_main",
+      "cmd_htmlgen_main_write",
+      "htmlgen_rec"
+    ],
+    "6": [
+      "a",
+      "a_a",
+      "html_aprops"
+    ],
+    "7": [
+      "abbr",
+      "abbr_abbr",
+      "html_abbrprops"
+    ],
+    "8": [
+      "acronym",
+      "acronym_acronym",
+      "html_acronymprops"
+    ],
+    "9": [
+      "address",
+      "address_address",
+      "html_addressprops"
+    ],
+    "10": [
+      "area",
+      "area_area",
+      "html_areaprops"
+    ],
+    "11": [
+      "article",
+      "article_article",
+      "html_articleprops"
+    ],
+    "12": [
+      "audio",
+      "audio_audio",
+      "html_audioprops"
+    ],
+    "13": [
+      "b",
+      "b_b",
+      "html_bprops"
+    ],
+    "14": [
+      "base",
+      "base_base",
+      "html_baseprops"
+    ],
+    "15": [
+      "bdi",
+      "bdi_bdi",
+      "html_bdiprops"
+    ],
+    "16": [
+      "bdo",
+      "bdo_bdo",
+      "html_bdoprops"
+    ],
+    "17": [
+      "blockquote",
+      "blockquote_blockquote",
+      "html_blockquoteprops"
+    ],
+    "18": [
+      "body",
+      "body_body",
+      "html_bodyprops"
+    ],
+    "19": [
+      "canvas",
+      "canvas_canvas",
+      "html_canvasprops"
+    ],
+    "20": [
+      "caption",
+      "caption_caption",
+      "html_captionprops"
+    ],
+    "21": [
+      "center",
+      "center_center",
+      "html_centerprops"
+    ],
+    "22": [
+      "cite",
+      "cite_cite",
+      "html_citeprops"
+    ],
+    "23": [
+      "colgroup",
+      "colgroup_colgroup",
+      "html_colgroupprops"
+    ],
+    "24": [
+      "data",
+      "data_data",
+      "html_dataprops"
+    ],
+    "25": [
+      "datalist",
+      "datalist_datalist",
+      "html_datalistprops"
+    ],
+    "26": [
+      "dd",
+      "dd_dd",
+      "html_ddprops"
+    ],
+    "27": [
+      "del",
+      "del_del",
+      "html_delprops"
+    ],
+    "28": [
+      "dfn",
+      "dfn_dfn",
+      "html_dfnprops"
+    ],
+    "29": [
+      "dialog",
+      "dialog_dialog",
+      "html_dialogprops"
+    ],
+    "30": [
+      "div",
+      "div_div",
+      "html_divprops"
+    ],
+    "31": [
+      "dl",
+      "dl_dl",
+      "html_dlprops"
+    ],
+    "32": [
+      "dt",
+      "dt_dt",
+      "html_dtprops"
+    ],
+    "33": [
+      "embed",
+      "embed_embed",
+      "html_embedprops"
+    ],
+    "34": [
+      "fencedframe",
+      "fencedframe_fencedframe",
+      "html_fencedframeprops"
+    ],
+    "35": [
+      "fieldset",
+      "fieldset_fieldset",
+      "html_fieldsetprops"
+    ],
+    "36": [
+      "figcaption",
+      "figcaption_figcaption",
+      "html_figcaptionprops"
+    ],
+    "37": [
+      "figure",
+      "figure_figure",
+      "html_figureprops"
+    ],
+    "38": [
+      "font",
+      "font_font",
+      "html_fontprops"
+    ],
+    "39": [
+      "footer",
+      "footer_footer",
+      "html_footerprops"
+    ],
+    "40": [
+      "form",
+      "form_form",
+      "html_formprops"
+    ],
+    "41": [
+      "frame",
+      "frame_frame",
+      "html_frameprops"
+    ],
+    "42": [
+      "geolocation",
+      "geolocation_geolocation",
+      "html_geolocationprops"
+    ],
+    "43": [
+      "h3",
+      "h3_h3",
+      "html_h3props"
+    ],
+    "44": [
+      "h6",
+      "h6_h6",
+      "html_h6props"
+    ],
+    "45": [
+      "head",
+      "head_head",
+      "html_headprops"
+    ],
+    "46": [
+      "header",
+      "header_header",
+      "html_headerprops"
+    ],
+    "47": [
+      "hr",
+      "hr_hr",
+      "html_hrprops"
+    ],
+    "48": [
+      "html",
+      "html_html",
+      "html_htmlprops"
+    ],
+    "49": [
+      "html_iframeprops",
+      "iframe",
+      "iframe_iframe"
+    ],
+    "50": [
+      "html_imgprops",
+      "img",
+      "img_img"
+    ],
+    "51": [
+      "html_iprops",
+      "i",
+      "i_i"
+    ],
+    "52": [
+      "html_kbdprops",
+      "kbd",
+      "kbd_kbd"
+    ],
+    "53": [
+      "html_labelprops",
+      "label",
+      "label_label"
+    ],
+    "54": [
+      "html_legendprops",
+      "legend",
+      "legend_legend"
+    ],
+    "55": [
+      "html_liprops",
+      "li",
+      "li_li"
+    ],
+    "56": [
+      "html_mainprops",
+      "main",
+      "main_main"
+    ],
+    "57": [
+      "html_mapprops",
+      "map",
+      "map_map"
+    ],
+    "58": [
+      "html_marqueeprops",
+      "marquee",
+      "marquee_marquee"
+    ],
+    "59": [
+      "html_menuprops",
+      "menu",
+      "menu_menu"
+    ],
+    "60": [
+      "html_metaprops",
+      "meta",
+      "meta_meta"
+    ],
+    "61": [
+      "html_meterprops",
+      "meter",
+      "meter_meter"
+    ],
+    "62": [
+      "html_modelprops",
+      "model",
+      "model_model"
+    ],
+    "63": [
+      "html_navprops",
+      "nav",
+      "nav_nav"
+    ],
+    "64": [
+      "html_nobrprops",
+      "nobr",
+      "nobr_nobr"
+    ],
+    "65": [
+      "html_noembedprops",
+      "noembed",
+      "noembed_noembed"
+    ],
+    "66": [
+      "html_noscriptprops",
+      "noscript",
+      "noscript_noscript"
+    ],
+    "67": [
+      "html_objectprops",
+      "object",
+      "object_object"
+    ],
+    "68": [
+      "html_olprops",
+      "ol",
+      "ol_ol"
+    ],
+    "69": [
+      "html_optionprops",
+      "option",
+      "option_option"
+    ],
+    "70": [
+      "html_outputprops",
+      "output",
+      "output_output"
+    ],
+    "71": [
+      "html_paramprops",
+      "param",
+      "param_param"
+    ],
+    "72": [
+      "html_pictureprops",
+      "picture",
+      "picture_picture"
+    ],
+    "73": [
+      "html_plaintextprops",
+      "plaintext",
+      "plaintext_plaintext"
+    ],
+    "74": [
+      "html_pprops",
+      "p",
+      "p_p"
+    ],
+    "75": [
+      "html_preprops",
+      "pre",
+      "pre_pre"
+    ],
+    "76": [
+      "html_progressprops",
+      "progress",
+      "progress_progress"
+    ],
+    "77": [
+      "html_qprops",
+      "q",
+      "q_q"
+    ],
+    "78": [
+      "html_rbprops",
+      "rb",
+      "rb_rb"
+    ],
+    "79": [
+      "html_rpprops",
+      "rp",
+      "rp_rp"
+    ],
+    "80": [
+      "html_rtcprops",
+      "rtc",
+      "rtc_rtc"
+    ],
+    "81": [
+      "html_rtprops",
+      "rt",
+      "rt_rt"
+    ],
+    "82": [
+      "html_rubyprops",
+      "ruby",
+      "ruby_ruby"
+    ],
+    "83": [
+      "html_searchprops",
+      "search",
+      "search_search"
+    ],
+    "84": [
+      "html_sectionprops",
+      "section",
+      "section_section"
+    ],
+    "85": [
+      "html_selectedcontentprops",
+      "selectedcontent",
+      "selectedcontent_selectedcontent"
+    ],
+    "86": [
+      "html_slotprops",
+      "slot",
+      "slot_slot"
+    ],
+    "87": [
+      "html_smallprops",
+      "small",
+      "small_small"
+    ],
+    "88": [
+      "html_sourceprops",
+      "source",
+      "source_source"
+    ],
+    "89": [
+      "html_spanprops",
+      "span",
+      "span_span"
+    ],
+    "90": [
+      "html_sprops",
+      "s",
+      "s_s"
+    ],
+    "91": [
+      "html_strikeprops",
+      "strike",
+      "strike_strike"
+    ],
+    "92": [
+      "html_strongprops",
+      "strong",
+      "strong_strong"
+    ],
+    "93": [
+      "html_styleprops",
+      "style",
+      "style_style"
+    ],
+    "94": [
+      "html_subprops",
+      "sub",
+      "sub_sub"
+    ],
+    "95": [
+      "html_summaryprops",
+      "summary",
+      "summary_summary"
+    ],
+    "96": [
+      "html_supprops",
+      "sup",
+      "sup_sup"
+    ],
+    "97": [
+      "html_tableprops",
+      "table",
+      "table_table"
+    ],
+    "98": [
+      "html_tdprops",
+      "td",
+      "td_td"
+    ],
+    "99": [
+      "html_templateprops",
+      "template",
+      "template_template"
+    ],
+    "100": [
+      "html_textareaprops",
+      "textarea",
+      "textarea_textarea"
+    ],
+    "101": [
+      "html_tfootprops",
+      "tfoot",
+      "tfoot_tfoot"
+    ],
+    "102": [
+      "html_theadprops",
+      "thead",
+      "thead_thead"
+    ],
+    "103": [
+      "html_thprops",
+      "th",
+      "th_th"
+    ],
+    "104": [
+      "html_timeprops",
+      "time",
+      "time_time"
+    ],
+    "105": [
+      "html_titleprops",
+      "title",
+      "title_title"
+    ],
+    "106": [
+      "html_trackprops",
+      "track",
+      "track_track"
+    ],
+    "107": [
+      "html_trprops",
+      "tr",
+      "tr_tr"
+    ],
+    "108": [
+      "html_ttprops",
+      "tt",
+      "tt_tt"
+    ],
+    "109": [
+      "html_ulprops",
+      "ul",
+      "ul_ul"
+    ],
+    "110": [
+      "html_uprops",
+      "u",
+      "u_u"
+    ],
+    "111": [
+      "html_varprops",
+      "var",
+      "var_var"
+    ],
+    "112": [
+      "html_videoprops",
+      "video",
+      "video_video"
+    ],
+    "113": [
+      "html_wbrprops",
+      "wbr",
+      "wbr_wbr"
+    ],
+    "114": [
+      "html_xmpprops",
+      "xmp",
+      "xmp_xmp"
+    ],
+    "115": [
+      "pkg_github_com_nsatyasrikar_html"
+    ]
+  },
+  "cohesion": {
+    "0": 0.05279034690799397,
+    "1": 0.10869565217391304,
+    "2": 0.11231884057971014,
+    "3": 0.10869565217391304,
+    "4": 0.3055555555555556,
+    "5": 0.5333333333333333,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0
+  },
+  "gods": [
+    {
+      "id": "html_node",
+      "label": "Node",
+      "degree": 141
+    },
+    {
+      "id": "html_attribute",
+      "label": "Attribute",
+      "degree": 139
+    },
+    {
+      "id": "common_props_globalattrs",
+      "label": "globalAttrs()",
+      "degree": 137
+    },
+    {
+      "id": "render_render",
+      "label": "Render()",
+      "degree": 7
+    },
+    {
+      "id": "html_validation",
+      "label": "validation",
+      "degree": 7
+    },
+    {
+      "id": "html_elementnode",
+      "label": "elementNode",
+      "degree": 6
+    },
+    {
+      "id": "render_test_testrendertree",
+      "label": "TestRenderTree()",
+      "degree": 6
+    },
+    {
+      "id": "h1_h1",
+      "label": "H1()",
+      "degree": 5
+    },
+    {
+      "id": "html_inputprops",
+      "label": "InputProps",
+      "degree": 5
+    },
+    {
+      "id": "input_input",
+      "label": "Input()",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "A()",
+      "target": "globalAttrs()",
+      "source_files": [
+        "a.go",
+        "common_props.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Abbr()",
+      "target": "globalAttrs()",
+      "source_files": [
+        "abbr.go",
+        "common_props.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Acronym()",
+      "target": "globalAttrs()",
+      "source_files": [
+        "acronym.go",
+        "common_props.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Address()",
+      "target": "globalAttrs()",
+      "source_files": [
+        "address.go",
+        "common_props.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Area()",
+      "target": "globalAttrs()",
+      "source_files": [
+        "area.go",
+        "common_props.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
