@@ -159,20 +159,42 @@ Emits raw HTML via `rawNode` (same primitive `UnsafeHTML` uses) since the
 CSS body itself is not escaped — same trust model as `<script>` content
 today. No new `Node` kind, no change to `render.go`/`validate.go`.
 
-This does not touch `<script>` — there's no non-parser way to scope JS
-identifiers. README's bullet gets reworded rather than deleted:
+### 4. `ScopedScript` helper
 
-> No JS scoping — `<script>` content is emitted as-is; keeping identifiers
-> collision-free across a page is your responsibility. `ScopedStyle`
-> namespaces CSS selectors for you; it only rewrites top-level selectors
-> (not `@media`/nested rules), so deeply nested or at-rule-wrapped CSS
-> still needs manual care.
+JS identifiers can't be rewritten without a real parser — but they don't
+need to be. JavaScript's own function scoping already gives a total
+guarantee: wrap the body in an IIFE and every `var`/`let`/`const`/
+`function` declared inside becomes unreachable outside, regardless of how
+the inner code is written. New file `scoped_script.go`:
+
+```go
+package html
+
+// ScopedScript renders a <script> tag whose body runs inside an IIFE, so
+// every var/let/const/function it declares is invisible outside — no
+// parser needed, JS's own function scoping does the isolating.
+func ScopedScript(js string) Node {
+    return rawNode("<script>(function(){\n" + js + "\n})();</script>")
+}
+```
+
+This is a complete fix, not a best-effort one: nothing inside an IIFE can
+leak into the global scope, full stop. It doesn't scope *DOM* collisions
+(two components both writing to the same `id`) — that's a markup-authoring
+concern the caller already controls via `ID`/`Class` on the elements they
+build, not something a script wrapper can fix.
 
 ### Testing
 
 - One `scoped_style_test.go` covering: simple selector, comma-separated
   selectors, an `@media` block passed through unprefixed, and an
   already-scoped output round-tripped through `Render`.
+- One `scoped_script_test.go` covering: the body appears wrapped in the
+  IIFE exactly (`(function(){` prefix, `})();</script>` suffix), and a
+  `var`/`function` declared inside doesn't appear as a bare global in the
+  rendered string outside the wrapper (string-level check, not a real JS
+  engine — this package has no JS runtime dependency and shouldn't gain one
+  just to test this).
 - No new tests per element file — existing `TestRenderTree`-style coverage
   already exercises `globalAttrs`/`Attribute` wiring; new fields follow the
   identical code path `input.go` already proves works.
@@ -189,7 +211,8 @@ boundary as `UnsafeHTML`).
 
 ## Out of scope
 
-- No CSS parser, no JS scoping, no schema/generator tool.
+- No CSS parser (selector rewrite is a string transform, not a full
+  parser), no schema/generator tool.
 - No changes to global attributes (`lang`, `data-*`, `aria-*`, ...) — not
   named in the original Limitations bullets, so adding them now would be
   scope creep beyond what's being closed here.
@@ -197,18 +220,13 @@ boundary as `UnsafeHTML`).
 
 ## README changes
 
-Once implemented, Limitations shrinks to:
+The `## Limitations` section is deleted entirely — all three original
+bullets are closed:
+1. every element with real HTML attributes now exposes them directly
+2. `Fragment` + plain functions are documented as the composition model
+3. `ScopedStyle`/`ScopedScript` close CSS/JS collision risk
 
-```md
-## Limitations
-
-- No JS scoping — `<script>` content is emitted as-is; keeping identifiers
-  collision-free across a page is your responsibility. `ScopedStyle`
-  namespaces CSS selectors for you (see below); it only rewrites top-level
-  selectors, so deeply nested or at-rule-wrapped CSS still needs manual
-  care.
-```
-
-And a new `## Scoped styles` section documents `ScopedStyle` next to
-`## Inline scripts`, with a runnable example (verified against real
-`go run` output, per this repo's existing README convention).
+A new `## Scoped styles and scripts` section (placed after
+`## Inline scripts`) documents `ScopedStyle` and `ScopedScript` with a
+runnable example each, verified against real `go run` output, per this
+repo's existing README convention.
