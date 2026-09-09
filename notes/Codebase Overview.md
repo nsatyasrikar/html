@@ -34,7 +34,7 @@ Index note for the `html` Go module. Start here.
 - Module: `github.com/nsatyasrikar/html`, published under MIT, tagged `v0.1.0` — see [[Decisions Log#Publishing as a public module]]
 - Requires Go 1.21+, no third-party dependencies
 - No API key or network access needed to build/test
-- Every element file (`div.go`, `p.go`, ...) follows one template: a `<Name>Props` struct plus a constructor calling `globalAttrs` + `elementNode{...}` — all hand-written, see [[Decisions Log#htmlgen removal]]
+- Every element file (`div.go`, `p.go`, ...) follows one template: a `<Name>Props` struct plus a constructor calling `globalAttrs` + `elementNode{...}` — all hand-written, see [[Decisions Log#Closing the Limitations list]]
 - Knowledge graph lives at `graphify-out/` (gitignored, regenerates via `graphify update .` — see [[Decisions Log#graphify]])
 
 ## Related code

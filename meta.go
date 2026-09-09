@@ -2,7 +2,7 @@ package html
 
 type MetaProps struct {
 	ID, Class, Style, Title, Name, Content *string
-	Attributes                            []Attribute
+	Attributes                             []Attribute
 }
 
 func Meta(p MetaProps) Node {

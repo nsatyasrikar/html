@@ -35,6 +35,12 @@ else changes — element-specific fields still only get added when a
 consumer needs them, same pattern `input.go`/`button.go`/`a.go`/`meta.go`/
 `link.go` already followed.
 
+## Closing the Limitations list
+
+Hand-wrote real element attributes as typed fields and added `ScopedStyle`
+and `ScopedScript` helpers. The README's Limitations section is replaced by
+usage documentation for these helpers.
+
 ## Publishing as a public module
 
 Made go-gettable: added `LICENSE` (MIT), a `README.md` with install

@@ -68,8 +68,8 @@ the tree.
 Every `<tag>.go` file is hand-written. `cmd/htmlgen` used to write these from
 an `index.json` element schema, but that schema never existed in this repo —
 the generator was dead code from the first commit and was removed (see
-[[Decisions Log#htmlgen removal]]). Most files still only expose the generic
-four props; a handful gained element-specific fields as consumers needed
-them (`input.go`, `button.go`, `a.go`, `meta.go`, `link.go`, ...). `script`
+[[Decisions Log#htmlgen removal]]). Every element with real HTML attributes
+exposes them as typed fields; elements with no attributes beyond the generic
+four remain unchanged. `script`
 is special-cased to `ScriptTag`/`script_tag.go` to avoid colliding with
 `ScriptCode` (`script_code.go`), the hand-written raw-JS-body node.

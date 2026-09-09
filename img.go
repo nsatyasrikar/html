@@ -1,8 +1,8 @@
 package html
 
 type ImgProps struct {
-	ID, Class, Style, Title, Src, Alt *string
-	Attributes                        []Attribute
+	ID, Class, Style, Title, Src, Alt, Width, Height, Srcset, Sizes, Loading *string
+	Attributes                                                               []Attribute
 }
 
 func Img(p ImgProps) Node {
@@ -12,6 +12,21 @@ func Img(p ImgProps) Node {
 	}
 	if p.Alt != nil {
 		a = append(a, Attribute{"alt", *p.Alt, false})
+	}
+	if p.Width != nil {
+		a = append(a, Attribute{"width", *p.Width, false})
+	}
+	if p.Height != nil {
+		a = append(a, Attribute{"height", *p.Height, false})
+	}
+	if p.Srcset != nil {
+		a = append(a, Attribute{"srcset", *p.Srcset, false})
+	}
+	if p.Sizes != nil {
+		a = append(a, Attribute{"sizes", *p.Sizes, false})
+	}
+	if p.Loading != nil {
+		a = append(a, Attribute{"loading", *p.Loading, false})
 	}
 	return elementNode{name: "img", props: a, void: true}
 }

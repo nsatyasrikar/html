@@ -156,16 +156,23 @@ go test ./...
 
 No API key or network access required to build or test.
 
-## Limitations
+## Scoped styles and scripts
 
-- Most element files only expose `ID`, `Class`, `Style`, `Title`,
-  and `Attributes` — reach other attributes through `Attributes` until a
-  given file is hand-extended (as `input.go`, `button.go`, `a.go`, `meta.go`,
-  and `link.go` already are).
-- `Fragment(children...)` groups nodes into a `[]Node` for composing pieces
-  together; there's still no component abstraction beyond plain `Node`.
-- No CSS/JS scoping — `<style>`/`<script>` content is emitted as-is; keeping
-  it collision-free across a page is your responsibility.
+`ScopedStyle` prefixes selectors in ordinary CSS rules with an id:
+
+```go
+html.Render(html.ScopedStyle("card-1", ".title { color: red; }"))
+// <style> #card-1 .title { color: red; }</style>
+```
+
+`ScopedScript` wraps a script body in an IIFE so its declarations stay local:
+
+```go
+html.Render(html.ScopedScript("var count = 0;"))
+// <script>(function(){
+// var count = 0;
+// })();</script>
+```
 
 ## License
 
