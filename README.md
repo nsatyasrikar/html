@@ -1,11 +1,23 @@
 # html
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/nsatyasrikar/html.svg)](https://pkg.go.dev/github.com/nsatyasrikar/html)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nsatyasrikar/html)](https://goreportcard.com/report/github.com/nsatyasrikar/html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A typed Go HTML builder. Every element (`Div`, `P`, `Input`, ...) is a plain
 function taking a `*Props` struct and returning a `Node`; `Render` walks the
 tree to an escaped HTML string.
 
 No template files, no string concatenation, no runtime parsing — the tree
 you build is the tree you render, checked by the Go compiler along the way.
+
+## Install
+
+```sh
+go get github.com/nsatyasrikar/html
+```
+
+Requires Go 1.21+. Zero third-party dependencies.
 
 ## Contents
 
@@ -18,6 +30,7 @@ you build is the tree you render, checked by the Go compiler along the way.
 - [Code generation](#code-generation)
 - [Building and testing](#building-and-testing)
 - [Limitations](#limitations)
+- [License](#license)
 
 ## Quick start
 
@@ -171,3 +184,7 @@ test — `index.json` is only needed if you're adding new elements.
   functions returning `Node` and slices of `Node` as `children`.
 - No CSS/JS scoping — `<style>`/`<script>` content is emitted as-is; keeping
   it collision-free across a page is your responsibility.
+
+## License
+
+[MIT](LICENSE)
