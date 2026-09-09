@@ -49,3 +49,10 @@ A knowledge graph of this codebase lives at `graphify-out/` (gitignored —
 LLM/API cost for a code-only corpus like this one. Query it with
 `graphify query "<question>"` before grepping raw source for architecture
 questions.
+
+`.git/hooks/post-commit` has a hand-added step (inside graphify's generated
+block, after the rebuild) that re-runs `graphify export obsidian` so
+`graphify-out/obsidian/` tracks the rebuilt graph automatically. `.git/hooks/`
+isn't versioned by git — this is local-only, and a future `graphify hook
+install`/upgrade can silently drop it. Re-add it (see the comment marked
+"Custom addition" in the hook file) if it goes missing.
